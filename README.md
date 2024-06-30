@@ -802,9 +802,9 @@ $$
 ```
   - **An example of a mathematical formula using MathJax**
   ```markdown
-  $$
+  
 \int_{a}^{b} f(x) \, dx = F(b) - F(a)
-$$
+
 ```
  
 
