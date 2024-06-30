@@ -792,11 +792,13 @@ $$
 ### Example:
 
 ```mermaid
- graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+ graph LR;
+    Start-->Step1;
+    Step1-->Step2;
+    Step2-->Decision{Is it correct?};
+    Decision-->|Yes|Step3;
+    Decision-->|No|Step1;
+    Step3-->End;
 ```
 
  
