@@ -269,14 +269,198 @@ git remote mainly refers to the possibility to manage and duplicate links to ext
 
 ### Example:
    - **By running this command:**
-      - ![alt text](image-3.png)
+       ![alt text](image-3.png)
 
        #### Redirect to this address - repository to git remote:
       file:///C:/Program%20Files/Git/mingw64/share/doc/git-doc/git-remote.html
    - **By running this command:**
-      - ![alt text](image-4.png)
+       ![alt text](image-4.png)
      #### The result is the display of all the remotes linked to the pool:
-      - ![alt text](image-5.png)
+       ![alt text](image-5.png)
 
 
  ---
+
+
+#   git pull :
+
+
+## description 
+git pull is a Git command used to update the local repository with the latest changes from the remote repository. The command combines two operations: git fetch, which fetches the changes from the remote repository, and git merge, which merges these changes into the current local branch. The command is to ensure that your local code is up to date with the latest code found in the remote repository.
+
+
+---
+
+
+##  Use-Cases  
+###  Basic Use-Case
+  - **Updating Local Repository**: The primary use of git pull is to update the local repository with the latest chang
+    - **Example**:  Running git pull origin main to fetch and mermain branch of the remote repository.
+
+
+  ---
+
+
+### Advanced Use-Cases
+- **Automated Sync**: Integrating git pull in a CI/CD pipeline to ensure the latest code
+- **Collaborative Development**: In a team environment, using git pull to frequently update the local repository with changes made
+- **Rebasing Instead of Merging**:  Using git pull --rebase to rebas
+
+---
+
+
+## Pros and Cons
+### Pros
+- **Easy Updates**: Simplifi
+- **Combines Fetch and Merge**: Combines the functionality of `git fgit fetch and git merge into a single command.
+- **Streamlined Workflow**: Improves the efficiency of collaborative development by keeping local repositories u
+
+
+---
+
+
+### Cons
+- **Automatic Merge Conflicts**: If there are conflicts between the local and remote changes, they need to be resolved manuall
+- **Implicit Behavior**: The automatic merge behavior may sometimes lead to unexpected results if not used carefully.
+- **Dependency on Network**: Requires a stable network connection to interact with the remote repository.
+
+
+---
+
+
+## Coding Examples
+- **Pull latest changes from the remote repository's main branch**
+```sh
+   git pull origin main
+   ```
+- **Pull latest changes and rebase local commits on top of the remote changes**
+```sh
+   git pull --rebase origin main
+   ```
+- **Pull latest changes and handle conflicts if any**
+```sh
+git pull origin main
+```
+- **In case of conflicts, resolve them manually**
+- **After resolving conflicts, complete the merge**
+```sh
+git add .
+git commit -m "Resolved merge conflicts"
+```
+
+
+---
+
+
+
+## Alternatives
+ - **git fetch + git merge**: Fetches the latest changes from th
+ ```sh
+ git fetch origin
+ git merge origin/main
+```
+ - **git rebase**: Reapplies local commits on top
+ ```sh
+ git fetch origin
+ git rebase origin/main
+```
+ 
+ ---
+
+
+### Example:
+
+### An actual example of actually running a git pull commsnd
+![alt text](image-6.png)
+
+
+ ---
+
+
+#   git push :
+
+
+## description 
+git push is a Git command used to push the contents of a local repository to a remote repository. It moves your commits from your local computer to a remote repository like GitHub, GitLab, or Bitbucket, so your changes are available to others.
+
+
+---
+
+
+##  Use-Cases  
+###  Basic Use-Case
+  - **Uploading Changes**: Afte
+    - **Example**:  `git push origin main uploads` changes from the local main branch to the remote repository.
+
+
+  ---
+
+
+### Advanced Use-Cases
+- **Pushing to a Specific Branch**: When working wi
+  - **Example**: git push origin feature-branch pushes changesfeature-branch to the remote repository.
+- **Force Pushing**: Overwrites the remote branch with your local branch. Use
+  - **Example**: `git push --force origin main`
+- **Pushing Tags**:  Uploads tags to the remote repository
+  - **Example**: `git push origin v1.0.0`
+
+
+---
+
+
+## Pros and Cons
+### Pros
+- **Collaboration**: Allows multiple developers to work on the same project by sharing changes.
+- **Backup**: Provides a remote backup of your code.
+- **Continuous Integration**: Facilitates automated workflows and continuous integration by ensur
+
+
+---
+
+
+### Cons
+- **Overwrite Risks**: Force pushing can overwrite other developers' changes.
+- **Conflicts**: Pushing changes without pulling the latest changes from
+
+
+---
+
+
+## Coding Examples
+- **Basic Push**: Pushes changes from your local main branch to the remote main branch.
+```sh
+   git push origin main
+   ```
+- **Force Push**: Forces the changes from your local main branch to overwrite the remote main branch
+```sh
+   git push --force origin main
+   ```
+- **Push a Specific Branch**: Pushes the feature-branch to the remote repository.
+```sh
+git push origin feature-branch
+```
+- **Push**: Pushes the tag v1.0.0 to t
+```sh
+git push origin v1.0.0
+```
+
+
+---
+
+
+
+## Alternatives
+ - **git pull**: Combines `git fetch` and `git merge` to update your local branch with chang
+ - **git fetch**: Downloads objects a
+ 
+ ---
+
+
+### Example:
+
+### An actual example of actually running a basic git push commsnd
+![alt text](image-7.png)
+
+
+ ---
+
