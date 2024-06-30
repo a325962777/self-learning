@@ -792,7 +792,7 @@ $$
 ### Example:
 
 
-```graph TD;
+```sh graph TD;
     A-->B;
     A-->C;
     B-->D;
