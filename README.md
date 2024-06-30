@@ -648,7 +648,7 @@ Indicates that there are no changes to stash at this time. This means that no fi
  ---
 
 
-#   git stash :
+#   commit message :
 
 
 ## description 
