@@ -647,3 +647,72 @@ Indicates that there are no changes to stash at this time. This means that no fi
 
  ---
 
+
+#   git stash :
+
+
+## description 
+The commit message is the message that explains the changes made to the particular commit in the Git version control system. It serves as a short and precise summary that explains what the purpose of the change was, why it was required and even what the solution or correction was made.
+
+
+---
+
+
+##  Use-Cases  
+###  Basic Use-Case
+  Brief name and description of the primary code change.
+
+
+  ---
+
+
+### Advanced Use-Cases
+Explanation of advanced uses such as documenting explained code, bug fixes, or adding new features.
+
+---
+
+
+## Pros and Cons
+### Pros
+Assists teams in code maintenance and development, provides quick understanding and tangible documentation of the change.
+
+
+---
+
+
+### Cons
+If not written clearly or accurately, it can lead to confusion or lack of consistency.
+
+
+---
+
+
+## Coding Examples
+```plaintext
+Fix: Corrected issue with login validation
+
+- Added additional checks for email format.
+- Fixed error handling for password mismatch.
+```
+
+
+---
+
+
+
+## Alternatives
+ Other methods for documenting changes, such as detailed documentation files, project management systems, or other version control systems.
+
+ 
+ ---
+
+
+### Example:
+
+### Examples of commit messages as seen on the screen include a description of the change, the problem addressed, and the proposed solution
+
+![alt text](image-11.png)
+![alt text](image-12.png)
+
+ ---
+
