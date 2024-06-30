@@ -268,11 +268,14 @@ git remote mainly refers to the possibility to manage and duplicate links to ext
 
 
 ### Example:
-### By running this command:
+ - **By running this command:**
   ![alt text](image-3.png)
-### Redirect to this address - repository to git remote:
-file:///C:/Program%20Files/Git/mingw64/share/doc/git-doc/git-remote.html
-
+  - Redirect to this address - repository to git remote:
+    file:///C:/Program%20Files/Git/mingw64/share/doc/git-doc/git-remote.html
+ - **By running this command:**
+  ![alt text](image-4.png)
+    The result is the display of all the remotes linked to the pool:
+    ![alt text](image-5.png)
 
 
  ---
