@@ -790,7 +790,7 @@ $$
 
 
 ### Example:
-
+  - **Description of the chart**
 ```mermaid
  graph LR;
     Start-->Step1;
@@ -800,6 +800,11 @@ $$
     Decision-->|No|Step1;
     Step3-->End;
 ```
-
+  - **An example of a mathematical formula using MathJax**
+  ```markdown
+  $$
+\int_{a}^{b} f(x) \, dx = F(b) - F(a)
+$$
+```
  
 
